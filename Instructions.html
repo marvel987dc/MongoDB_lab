@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="comp229---lab-2-mongodb-and-javascript-integration">COMP229 - Lab 2: MongoDB and JavaScript Integration</h1>
+<h2 id="objective">Objective:</h2>
+<p>In this lab, you will integrate MongoDB with Node.js to answer a series of questions by querying data from MongoDB and processing the results in JavaScript.</p>
+<p>Your tasks involve writing MongoDB queries and applying JavaScript logic to return answers for each of the questions. Two collections are provided in the MongoDB database: <code>countries</code> and <code>medals</code>. You will use these collections to answer the following questions.</p>
+<h2 id="required-packages">Required Packages:</h2>
+<ul>
+<li><code>mongodb</code></li>
+<li><code>dotenv</code></li>
+</ul>
+<h2 id="instructions">Instructions:</h2>
+<h3 id="environment-setup">1. Environment Setup:</h3>
+<ul>
+<li>Set up your project and install the necessary packages (<code>mongodb</code> and <code>dotenv</code>) using npm.</li>
+<li>Use a <code>.env</code> file to store your MongoDB connection string.</li>
+</ul>
+<h3 id="understanding-the-structure">2. Understanding the Structure:</h3>
+<ul>
+<li>The MongoDB database contains two collections: <code>countries</code> (for population and geographical data) and <code>medals</code> (for Olympic medal data). The questions will involve querying these collections.</li>
+<li>Each question has a MongoDB query part (to fetch the data) and a JavaScript processing part (to compute the answer based on the data fetched).</li>
+</ul>
+<h3 id="tasks">3. Tasks:</h3>
+<h4 id="question-1-what-is-the-capital-of-the-country-that-has-the-largest-2022-population">Question 1: What is the Capital of the country that has the largest 2022 population?</h4>
+<ul>
+<li><strong>MongoDB Part:</strong> Fetch all countries.</li>
+<li><strong>JavaScript Part:</strong> Identify the country with the largest 2022 population and return its capital.</li>
+</ul>
+<h4 id="question-2-what-is-the-total-population-of-countries-in-europe-as-of-2022">Question 2: What is the total population of countries in Europe as of 2022?</h4>
+<ul>
+<li><strong>MongoDB Part:</strong> Query for all European countries.</li>
+<li><strong>JavaScript Part:</strong> Sum their populations.</li>
+</ul>
+<h4 id="question-3-how-many-medals-did-canada-win-in-the-2024-olympics">Question 3: How many medals did Canada win in the 2024 Olympics?</h4>
+<ul>
+<li><strong>MongoDB Part:</strong> Fetch data about Canada from the <code>medals</code> collection.</li>
+<li><strong>JavaScript Part:</strong> Return the number of medals won.</li>
+</ul>
+<h4 id="question-4-how-many-gold-medals-were-won-by-countries-in-asia">Question 4: How many gold medals were won by countries in Asia?</h4>
+<ul>
+<li><strong>MongoDB Part:</strong> Query for countries from Asia in the <code>medals</code> collection.</li>
+<li><strong>JavaScript Part:</strong> Count and return the total number of gold medals won.</li>
+</ul>
+<h4 id="question-5-which-country-with-a-population-under-5-million-won-the-most-medals-in-the-2024-olympics">Question 5: Which country with a population under 5 million won the most medals in the 2024 Olympics?</h4>
+<ul>
+<li><strong>MongoDB Part:</strong> Query for countries with a population under 5 million in 2022.</li>
+<li><strong>JavaScript Part:</strong> Determine which of these countries won the most medals.</li>
+</ul>
+<h4 id="question-6-what-is-the-total-number-of-bronze-medals-won-by-countries-in-europe">Question 6: What is the total number of bronze medals won by countries in Europe?</h4>
+<ul>
+<li><strong>MongoDB Part:</strong> Query for European countries in the <code>medals</code> collection.</li>
+<li><strong>JavaScript Part:</strong> Sum the number of bronze medals won.</li>
+</ul>
+<h4 id="question-7-what-is-the-total-population-of-countries-in-africa-that-participated-in-the-2024-olympics">Question 7: What is the total population of countries in Africa that participated in the 2024 Olympics?</h4>
+<ul>
+<li><strong>MongoDB Part:</strong> Query for African countries that participated in the 2024 Olympics.</li>
+<li><strong>JavaScript Part:</strong> Sum their populations.</li>
+</ul>
+<h4 id="question-8-which-country-with-more-than-50-million-people-in-2022-won-the-fewest-medals-in-the-2024-olympics">Question 8: Which country with more than 50 million people in 2022 won the fewest medals in the 2024 Olympics?</h4>
+<ul>
+<li><strong>MongoDB Part:</strong> Query for countries with a population greater than 50 million.</li>
+<li><strong>JavaScript Part:</strong> Find which of these countries won the fewest medals.</li>
+</ul>
+<h4 id="question-9-which-country-with-a-population-under-1-million-has-the-highest-medal-count-in-the-2024-olympics">Question 9: Which country with a population under 1 million has the highest medal count in the 2024 Olympics?</h4>
+<ul>
+<li><strong>MongoDB Part:</strong> Query for countries with a population under 1 million.</li>
+<li><strong>JavaScript Part:</strong> Determine which of these countries has the highest medal count.</li>
+</ul>
+<h4 id="question-10-which-country-had-the-highest-medal-to-population-ratio-in-the-2024-olympics">Question 10: Which country had the highest medal-to-population ratio in the 2024 Olympics?</h4>
+<ul>
+<li><strong>MongoDB Part:</strong> Query for all countries that participated in the 2024 Olympics.</li>
+<li><strong>JavaScript Part:</strong> Calculate and return the country with the highest ratio of medals to population.</li>
+</ul>
+<h2 id="final-steps">Final Steps:</h2>
+<ul>
+<li>Complete the code for each question by splitting it into a MongoDB part and a JavaScript part.</li>
+<li>Test your functions to ensure they return the correct answers for each question.</li>
+<li>If you finish early, explore how you could optimize your MongoDB queries.</li>
+</ul>
+<p>Good luck, and remember to break down each task into manageable parts!</p>
+</div>
+</body>
+
+</html>
